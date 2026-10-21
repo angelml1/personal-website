@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angel Martinez | Projects</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <button id="theme-toggle">Toggle Dark Mode</button>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html" class="active">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <h1>Projects</h1>
+</header>
+
+<main>
+
+    <section>
+
+        <div class="project-card">
+            <h3>StudyAI</h3>
+            <p class="tech">Hackathon Project, April 2026 | Next.js, React, Node.js, Groq (LLaMA 3.3 70B)</p>
+            <ul>
+                <li>Built a full-stack web app that converts pasted study notes into AI-generated study material.</li>
+                <li>Engineered a Node.js API route that integrates Groq's LLaMA 3.3 70B model to generate a concise summary and 12 question-and-answer flashcards per submission.</li>
+                <li>Added document-parsing support for PDF and Office file uploads using the pdf-parse and office-text-extractor libraries.</li>
+            </ul>
+        </div>
+
+        <div class="project-card">
+            <h3>Nuke-Map</h3>
+            <p class="tech">Group Project, Modern Web Technologies Course, April 2026 | Node.js, Express, Leaflet.js, MySQL</p>
+            <a href="Photos/nuke-map.png" target="_blank" rel="noopener">
+                <img src="Photos/nuke-map.png" alt="Nuke-Map interface showing blast radius zones overlaid on a world map"
+                     class="project-img" loading="lazy">
+            </a>
+            <ul>
+                <li>Collaborated with a 5-person team to build a full-stack web app that visualizes the effects of a nuclear detonation at any location worldwide using the Leaflet.js mapping library.</li>
+                <li>Implemented the core blast-radius calculation engine, modeling fireball, blast-overpressure, thermal-radiation, and initial-radiation zones with yield-scaling formulas and rendering them as interactive map overlays.</li>
+                <li>Designed RESTful API endpoints backed by a MySQL database to persist and retrieve simulation data, including location, coordinates, and warhead yield.</li>
+            </ul>
+        </div>
+
+        <div class="project-card">
+            <h3>Personal Finance Tracker</h3>
+            <p class="tech">Java, JavaFX</p>
+            <ul>
+                <li>Developed a desktop application with Java and JavaFX for logging income and expenses, organizing transactions by category, and tracking spending against monthly budgets.</li>
+                <li>Built the UI with JavaFX layouts and controls, including table views, forms, and charts for entering transactions and visualizing spending by category and month.</li>
+            </ul>
+        </div>
+
+        <div class="project-card">
+            <h3>Custom Language Compiler</h3>
+            <p class="tech">C, Lex, Yacc</p>
+            <ul>
+                <li>Built the front end of a compiler for a custom programming language in C, using Lex to break source code into tokens and Yacc to parse it.</li>
+                <li>Built a syntax tree from the parsed code so later stages could analyze the program's structure.</li>
+                <li>Wrote the semantic analysis pass: kept track of declared variables and where they're in scope, and reported errors for [undeclared variables, duplicate declarations, and type mismatches].</li>
+            </ul>
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Angel Martinez</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
